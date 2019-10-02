@@ -29,6 +29,8 @@
     echo $book2->author;
 
     echo 'The name of the class is: ' . get_class($book1);
+    print_r(get_class_vars('User') );
+    print_r(get_class_methods('User') );
 
 	?>
 
