@@ -28,12 +28,7 @@
     echo $book2->title;
     echo $book2->author;
 
-    class Student {
-        var $name;
-        var $age;
-        var $gpa;
-        var $carrea;
-    }
+    echo 'The name of the class is: ' . get_class($book1);
 
 	?>
 
