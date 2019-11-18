@@ -16,8 +16,10 @@
       
       		function setEmail() {
         		if(strpos($username, '@') > -1){
-          		$this->email = $aUsername;
+          			$this->email = $aUsername;
+			}
 		};
+			
 	}
     
 	var $userOne = new User('Andres', 'andres012@gmail.com');
