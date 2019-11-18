@@ -8,13 +8,16 @@
       $this->username = $username;
       $this->email = $email;
     }
+    
     public function addFriend(){
       //return "added a new friend";
       return "$this->username just added a new friend";
     }
+    
     public function message(){
       return "$this->email sent a new message";
     }
+    
     // getters
     public function getEmail(){
       return $this->email;
@@ -26,6 +29,7 @@
       };
     }
   }
+  
   class AdminUser extends User {
     public $level;
     public $role = 'admin';
@@ -37,16 +41,20 @@
       return "an admin sent a new message";
     }
   }
+  
   $userOne = new User('mario', 'mario@thenetninja.co.uk');
   $userTwo = new User('luigi', 'luigi@thenetninja.co.uk');
   $userThree = new AdminUser('yoshi', 'yoshi@thenetninja.co.uk', 5);
+  
   echo $userOne->role . '<br>';
   echo $userThree->role . '<br>';
   echo $userOne->message() . '<br>';
   echo $userThree->message() . '<br>'; 
+  
 ?>
 
 <html lang="en">
+<html>
 <head>
   <title>PHP OOP</title>
 </head>
