@@ -1,0 +1,52 @@
+<?php 
+
+  class Weather {
+
+    public static $tempConditions = ['cold', 'mild', 'warm', 'rainy']     
+
+    public static function celsiusToFarenheit( $c ) {
+      
+      return $c *9 /5 + 32;
+
+    }
+
+    public static function determineTempCondition( $f ) {
+
+	
+      if( $f < 40 ) { 
+	retrun self::$tempConditions[0]; 
+      }
+      else if ( $f < 70 ) {  
+	return self::$tempConditions[1]  
+      }
+      else { return
+	return self::$tempConditions[2] 
+      }
+
+    }
+
+    // we can do in this way
+    $weatherInstance = new Weather();
+    print_r( $weatherInstance->tampConditions );
+ 
+    // but now we have statics properties
+    print_r(Weather::$tempConditions);
+    echo Weather::celsiusToFarenheit(20));
+    echo Weather::determineTempCondition(80);
+    echo Weather::determineTempCondition(20);
+    echo Weather::determineTempCondition(50);
+
+
+  }
+
+?>
+
+<html lang="en">
+<html>
+<head>
+  <title>PHP OOP</title>
+</head>
+<body>
+ 	<a href="http://www.cristalab.com/tutoriales/programacion-batch-con-archivos-.bat-c48410l/">Curso batch</a>  
+</body>
+</html>
