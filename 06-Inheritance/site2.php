@@ -1,7 +1,7 @@
 <?php 
   class User {
     public $username;
-    private $email;
+    protected $email; // with protected is like a private but we can still use it in other classes extensions
     public $role = 'member';
     public function __construct($username, $email){
       //$this->username = 'ken';
@@ -38,7 +38,7 @@
       $this->level = $level; 
     }
     public function message(){ // overide a method value
-      return "an admin sent a new message";
+      return "this->email, an admin sent a new message";
     }
   }
   
@@ -62,3 +62,8 @@
   
 </body>
 </html>
+ /*
+    public: accessible from everywhere in and outside the class.
+    private: only accessible within the class.
+    protected: only accessible within the class and its extensions or inheritence.
+  */
