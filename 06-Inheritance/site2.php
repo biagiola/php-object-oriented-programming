@@ -32,7 +32,7 @@
   
   class AdminUser extends User {
     public $level;
-    public $role = 'admin';
+    public $role = 'admin'; // override the original property value 
     public function __construct($username, $email, $level){
       parent::__construct($username, $email);
       $this->level = $level; 
