@@ -45,7 +45,7 @@
 </body>
 </html>
 /*
-visibility modifiers -> public, private, etc.
+visibility modifiers -> public, private, static, etc.
 
 var and public are practicly the same.
 
