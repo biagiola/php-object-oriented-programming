@@ -7,16 +7,17 @@
       
       		function __contructor( $aUsername, $aEmail ) {
 			this->$username = $aUsername;
-        		this->setEmail($aEmail);
+        		// this->$email = $aEmail; probar este en casa
+			this->setEmail($aEmail);
 		}
       
       		function getEmail() {
-        		return this->aEmail;
+        		return this->email;
       		}
       
-      		function setEmail() {
+      		function setEmail($email) {
 			// string position, return the position of the @, if it dont have it, return 0
-        		if(strpos(email, '@') > -1){
+        		if(strpos($email, '@') > -1){
           			$this->email = $aUsername;
 			}
 		};
@@ -24,6 +25,10 @@
 	}
     
 	var $userOne = new User('Andres', 'andres012@gmail.com');
+
+	echo $userOne->getEmail();
+	$userOne->setEmail("davidbiagiola01@gmail.com");
+	echo $userOne->getEmail();
     
 ?>
 <!DOCTYPE html>
