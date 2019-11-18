@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<head>
-	<meta charset="utf-8">
-	<title>My web site<title>
-</head>
-<body>
-
-	<?php  
+<?php  
 	
     class Book {  	    // creating book's template, a class 
         var $title;
@@ -13,7 +6,7 @@
         var $pages;
     }
 		
-    $book1 = new Book;  // creating the actual book/creating the object, a instance of a class 
+    $book1 = new Book();  // creating the actual book/creating the object, a instance of a class 
     $book1 -> title = "Harry Potter";
     $book1 -> author = "JK Rowling";
     $book1 -> pages = 400;
@@ -32,6 +25,13 @@
     print_r(get_class_vars('User') );
     print_r(get_class_methods('User') );
 
-	?>
+?>
 
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<title>My web site<title>
+</head>
+<body>
+	
 </body>
