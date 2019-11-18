@@ -37,7 +37,7 @@
       parent::__construct($username, $email);
       $this->level = $level; 
     }
-    public function message(){
+    public function message(){ // overide a method value
       return "an admin sent a new message";
     }
   }
