@@ -15,6 +15,7 @@
       		}
       
       		function setEmail() {
+			// string position, return the position of the @, if it dont have it, return 0
         		if(strpos(email, '@') > -1){
           			$this->email = $aUsername;
 			}
