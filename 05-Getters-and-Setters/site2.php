@@ -15,7 +15,7 @@
       		}
       
       		function setEmail() {
-        		if(strpos($username, '@') > -1){
+        		if(strpos(email, '@') > -1){
           			$this->email = $aUsername;
 			}
 		};
